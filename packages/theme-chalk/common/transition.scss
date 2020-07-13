@@ -1,0 +1,97 @@
+.fade-in-linear-enter-active,
+.fade-in-linear-leave-active {
+  transition: opacity 200ms linear;
+}
+.fade-in-linear-enter,
+.fade-in-linear-leave,
+.fade-in-linear-leave-active {
+  opacity: 0;
+}
+
+.ic-fade-in-linear-enter-active,
+.ic-fade-in-linear-leave-active {
+  transition: opacity 200ms linear;
+}
+.ic-fade-in-linear-enter,
+.ic-fade-in-linear-leave,
+.ic-fade-in-linear-leave-active {
+  opacity: 0;
+}
+
+.ic-fade-in-enter-active,
+.ic-fade-in-leave-active {
+  transition: all .3s cubic-bezier(.55,0,.1,1);
+}
+.ic-fade-in-enter,
+.ic-fade-in-leave-active {
+  opacity: 0;
+}
+
+.ic-zoom-in-center-enter-active,
+.ic-zoom-in-center-leave-active {
+  transition: all .3s cubic-bezier(.55,0,.1,1);
+}
+.ic-zoom-in-center-enter,
+.ic-zoom-in-center-leave-active {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.ic-zoom-in-top-enter-active,
+.ic-zoom-in-top-leave-active {
+  opacity: 1;
+  transform: scaleY(1);
+  transition: transform 300ms cubic-bezier(0.23, 1, 0.32, 1), opacity 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transform-origin: center top;
+}
+.ic-zoom-in-top-enter,
+.ic-zoom-in-top-leave-active {
+  opacity: 0;
+  transform: scaleY(0);
+}
+
+.ic-zoom-in-bottom-enter-active,
+.ic-zoom-in-bottom-leave-active {
+  opacity: 1;
+  transform: scaleY(1);
+  transition: transform 300ms cubic-bezier(0.23, 1, 0.32, 1), opacity 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transform-origin: center bottom;
+}
+.ic-zoom-in-bottom-enter,
+.ic-zoom-in-bottom-leave-active {
+  opacity: 0;
+  transform: scaleY(0);
+}
+
+.ic-zoom-in-left-enter-active,
+.ic-zoom-in-left-leave-active {
+  opacity: 1;
+  transform: scale(1, 1);
+  transition: transform 300ms cubic-bezier(0.23, 1, 0.32, 1), opacity 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transform-origin: top left;
+}
+.ic-zoom-in-left-enter,
+.ic-zoom-in-left-leave-active {
+  opacity: 0;
+  transform: scale(.45, .45);
+}
+
+.collapse-transition {
+  transition: 0.3s height ease-in-out, 0.3s padding-top ease-in-out, 0.3s padding-bottom ease-in-out;
+}
+.horizontal-collapse-transition {
+  transition: 0.3s width ease-in-out, 0.3s padding-left ease-in-out, 0.3s padding-right ease-in-out;
+}
+
+.ic-list-enter-active,
+.ic-list-leave-active {
+  transition: all 1s;
+}
+.ic-list-enter, .ic-list-leave-active {
+  opacity: 0;
+  transform: translateY(-30px);
+}
+
+.ic-opacity-transition {
+  transition: opacity .3s cubic-bezier(.55,0,.1,1);
+}

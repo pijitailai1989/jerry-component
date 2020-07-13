@@ -1,0 +1,17 @@
+@import './common/var.scss';
+@import './common/transition.scss';
+
+// 滚动条样式
+.ic-scroll_bar {
+  -webkit-overflow-scrolling: touch;
+  // 滚动背景
+  &::-webkit-scrollbar{
+    width: 6px;
+    background-color: #0B396B;
+  }
+  // 滚动条
+  &::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: #1B5CA1;
+  }
+}
